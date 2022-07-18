@@ -8,10 +8,11 @@ import '../controllers/todoController.dart';
 import '../shared/theme.dart';
 
 class TodoEdit extends StatelessWidget {
-  final TodoController todoCtrl = Get.put(TodoController());
   final int index;
 
   TodoEdit({required this.index});
+
+  final TodoController todoCtrl = Get.put(TodoController());
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class TodoEdit extends StatelessWidget {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 Text(
-                  'Add a new Task',
+                  'Edit Task',
                   style: whiteTextStyle2.copyWith(
                       fontSize: 25, fontWeight: semiBold),
                 ),

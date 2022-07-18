@@ -1,14 +1,18 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, must_be_immutable, unnecessary_null_comparison, use_key_in_widget_constructors, unused_local_variable, unnecessary_this, empty_statements, unrelated_type_equality_checks
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, must_be_immutable, unnecessary_null_comparison, use_key_in_widget_constructors, unused_local_variable, unnecessary_this, empty_statements, unrelated_type_equality_checks, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:todo_list_getx/models/todo.dart';
 import 'package:todo_list_getx/shared/theme.dart';
-
 import '../controllers/todoController.dart';
 
-class TodoScreen extends StatelessWidget {
+class TodoScreen extends StatefulWidget {
+  @override
+  State<TodoScreen> createState() => _TodoScreenState();
+}
+
+class _TodoScreenState extends State<TodoScreen> {
   final TodoController todoCtrl = Get.put(TodoController());
 
   @override
@@ -90,7 +94,7 @@ class TodoScreen extends StatelessWidget {
                               )
                             ],
                           )),
-                    )
+                    ),
                   ],
                 ),
                 TextField(
@@ -128,7 +132,7 @@ class TodoScreen extends StatelessWidget {
                               selectedDate: todoCtrl
                                   .selectedDate.value.millisecondsSinceEpoch,
                             ));
-
+                            // Get.offNamed(RouteName.homePage);
                             Get.back();
                           },
                           child: Text(
@@ -152,9 +156,12 @@ class TodoScreen extends StatelessWidget {
                             'CANCEL',
                             style: redTextStyle.copyWith(fontWeight: black),
                           )),
-                    )
+                    ),
                     // ignore: deprecated_member_use
                   ],
+                ),
+                SizedBox(
+                  height: 8,
                 ),
               ],
             ),

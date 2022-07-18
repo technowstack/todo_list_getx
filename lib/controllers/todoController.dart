@@ -16,7 +16,7 @@ final TextEditingController desc = TextEditingController();
 chooseDate () async {
   DateTime? pickDate =  await showDatePicker(
         context: Get.context!,
-        initialDate: selectedDate.value
+        initialDate: selectedDate.value,
         firstDate: DateTime(2020),
         lastDate: DateTime(2050),);
       if(pickDate != null && pickDate != selectedDate.value){
