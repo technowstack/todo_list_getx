@@ -32,7 +32,7 @@ dependencies:
     sdk: flutter
   get: ^4.6.5
   get_storage: ^2.0.3
-  google_fonts: ^2.3.1
+  google_fonts: ^4.0.4
   intl: ^0.17.0
   share_plus: ^4.0.10
   url_launcher: ^6.0.20
