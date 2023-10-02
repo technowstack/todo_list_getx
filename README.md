@@ -1,16 +1,37 @@
-# todo_list_getx
 
-A new Flutter project.
+[![banner.png](https://i.postimg.cc/Qd93BM43/banner.png)](https://postimg.cc/4YgMqXRL)
+# Check IT
+Simple Minimalis To-do List App 
+[![made-with-flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/) [![made-with-flutter](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![pub package](https://img.shields.io/pub/v/get.svg?label=get&color=blue)](https://pub.dev/packages/get)
 
-## Getting Started
+## Features
+- Add and Manage Task
+- Set task due dates
+- Beautiful and minimalist design
+- Works Offline, all data stored on your devices
 
-This project is a starting point for a Flutter application.
+## Download
+[![get-it-on-playstore.png](https://i.postimg.cc/SsNr1nz2/get-it-on-playstore.png)](https://play.google.com/store/apps/details?id=com.technowstack.todo_list)
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Home | Add | Edit
+--- | --- | ---
+[![home.png](https://i.postimg.cc/9QFvTQLM/home.png)](https://postimg.cc/XpmH64SS) | [![add.png](https://i.postimg.cc/sxdkZPLd/add.png)](https://postimg.cc/G8K7WDrq) | [![edit.png](https://i.postimg.cc/43YqLFkR/edit.png)](https://postimg.cc/94jLzbQL)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Building from Source
+
+1. If you don't have Flutter SDK installed, please visit official [Flutter](https://flutter.dev/) site.
+2. Fetch latest source code from master branch.
+
+```
+git clone https://github.com/technowstack/todo_list_getx.git
+```
+
+3. Run the app with Android Studio or VS Code. Or the command line:
+
+```
+flutter pub get
+flutter run
+```
